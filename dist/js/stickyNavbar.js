@@ -1,0 +1,1 @@
+window.onscroll=function(){stickyNavbar()};const navbar=document.getElementById("navbar");let sticky=navbar.offsetTop;function stickyNavbar(){window.pageYOffset>sticky?navbar.classList.add("sticky"):navbar.classList.remove("sticky")}

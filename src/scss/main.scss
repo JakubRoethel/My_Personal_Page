@@ -1,0 +1,18 @@
+/* generic */
+
+@import"./generic/reset.scss";
+
+/* setting */
+
+@import "./settings/colors.scss";
+@import "./settings/fonts.scss" ;
+
+/* elements */
+
+@import "./elements/navbar.scss";
+@import "./elements/main-info.scss";
+@import "./elements//skills-info.scss";
+@import "./elements/about-me.scss";
+@import "./elements/my-project.scss";
+
+

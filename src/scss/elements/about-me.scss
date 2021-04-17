@@ -1,0 +1,28 @@
+.about-me {
+    background-color: $color-white;
+    height: 60vh;
+}
+
+.about-me-container {
+    display:flex;
+    max-width: 70%;
+    margin-top: 70px;
+}
+
+.about-me-title{
+    font-family: 'Karantina';
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-me-info {
+    text-align: justify;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-right: 100px;
+    line-height: 25px;
+}
+
+.my-photo {
+    height: 300px;
+    border-radius: 50%;
+}

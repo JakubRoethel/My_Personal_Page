@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info{
+    height: 100vh;
+    background-color: $color-base-green;
+    .my-info {
+        text-align: center;
+        font-size: 70px;
+        letter-spacing: 1px;
+        display: inline;
+        .my-info-title {
+            color: $color-black;
+            font-family: 'Karantina';
+        }
+    }
+}
+
+.cursor {
+    opacity: 0;
+    transition: .2s;
+   }
+
+.cursor.active {
+    opacity: 1;
+   }
