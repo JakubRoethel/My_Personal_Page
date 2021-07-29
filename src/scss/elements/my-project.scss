@@ -65,16 +65,16 @@
                         flex: 1;
                         display: flex;
                         justify-content: center;
-                        filter: brightness(50%);
                         cursor: pointer;
                         .project-miniature {
                             width: 550px;
                             height: 300px;
+                            filter: brightness(50%);
                         }
-                    }
-                    .project-miniature-link:hover {
-                        filter: unset;
-                        border: 1px solid $title-color;
+                        .project-miniature:hover {
+                            filter: unset;
+                            border: 1px solid $title-color;
+                        }
                     }
                 }
             }
