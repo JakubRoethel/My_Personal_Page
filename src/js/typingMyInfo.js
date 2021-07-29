@@ -1,4 +1,4 @@
-const txtTyping = ['I am Jakub Roethel', ' I am Frontend Developer']
+const txtTyping = ['Jakub Roethel', ' I am Junior Frontend Developer']
 const spnText = document.querySelector('.my-info-title')
 const spnCursor = document.querySelector('.cursor')
 

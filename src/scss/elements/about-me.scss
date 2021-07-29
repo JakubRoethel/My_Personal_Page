@@ -1,28 +1,62 @@
 .about-me {
-    background-color: $color-white;
-    height: 60vh;
+    background-color: rgb(214, 188, 92,);
+    height: 100vh;
+    .about-me-container {
+        display:flex;
+        padding-top: 100px;
+        flex-direction: column;
+        .about-me-wrapper {
+            margin-left:50px;
+            display: flex;
+            .my-photo {
+                height: 250px;
+                border-radius: 50%;
+            }
+            .about-me-content {
+                padding-left: 50px;
+                .about-me-title {
+                    color: $color-black;
+                    font-family: "Montserrat";
+                    font-weight: 700;
+                    font-size: 40px;
+                    margin-bottom: 50px;
+                }
+                .about-me-info {
+                    text-align: justify;
+                    line-height: 2;
+                    font-family: "Montserrat";
+                    font-weight: 400;
+                    margin-right: 100px;
+                    flex: 1;
+                }
+            }
+        }
+        .my-skills-box {
+            margin: 50px;
+            .skills-title {
+                font-family: "Montserrat";
+                font-weight: 700;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .logo-skills-wrapper {
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                .logo {
+                    height: 80px;
+                    width: 80px;
+                    margin-right: 30px;
+                }
+                .logo:hover {
+                    box-shadow: 0 0 25px $color-white;
+                    text-shadow: 0 0 25px $color-dark-green;
+                  }
+            }
+        }
+    }
 }
 
-.about-me-container {
-    display:flex;
-    max-width: 70%;
-    margin-top: 70px;
-}
 
-.about-me-title{
-    font-family: 'Karantina';
-    font-size: 50px;
-    margin-bottom: 20px;
-}
 
-.about-me-info {
-    text-align: justify;
-    font-family: 'Noto Sans JP', sans-serif;
-    margin-right: 100px;
-    line-height: 25px;
-}
-
-.my-photo {
-    height: 300px;
-    border-radius: 50%;
-}

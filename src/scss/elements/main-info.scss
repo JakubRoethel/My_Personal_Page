@@ -1,29 +1,69 @@
-.wrapper{
+.main-info {
+  height: 100vh;
+  background-color: $color-black;
+  display: flex;
+  align-items: center;
+  .main-info-box {
+    margin-left: 50px;
+    flex: 7;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-info{
-    height: 100vh;
-    background-color: $color-base-green;
-    .my-info {
-        text-align: center;
-        font-size: 70px;
-        letter-spacing: 1px;
-        display: inline;
-        .my-info-title {
-            color: $color-black;
-            font-family: 'Karantina';
-        }
+    flex-direction: column;
+    .my-info-text {
+      color: $color-white;
+      font-family: "Montserrat";
+      font-weight: 500;
+      font-size: 18px;
+      margin: 0px 0px 50px 0px;
     }
+    .my-info-animation {
+      font-size: 40px;
+      letter-spacing: 1px;
+      display: inline;
+      .my-info-title {
+        color: $title-color;
+        font-family: "Montserrat";
+        font-weight: 700;
+      }
+      .cursor {
+        opacity: 0;
+        transition: 0.2s;
+      }
+
+      .cursor.active {
+        opacity: 1;
+        color: $title-color;
+      }
+    }
+    .btn {
+      width: 200px;
+      height: 50px;
+      background-color: $color-black;
+      border: 1px solid $title-color;
+      color: $color-white;
+      margin-top: 50px;
+      font-size: 18px;
+      font-family: "Montserrat";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      scroll-behavior: smooth;
+    }
+  }
+  .social-ico-box {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 50px;
+    .social-ico {
+      width: 50px;
+      margin-bottom: 30px;
+      border-radius: 50%;
+    }
+    .social-ico:hover {
+        box-shadow: 0 0 25px $title-color;
+    }
+  }
 }
-
-.cursor {
-    opacity: 0;
-    transition: .2s;
-   }
-
-.cursor.active {
-    opacity: 1;
-   }
