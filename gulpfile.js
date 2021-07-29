@@ -18,6 +18,8 @@ const imageWebp = require('gulp-webp');
 
 const browserSync = require('browser-sync').create();
 
+const deploy = require('gulp-gh-pages');
+
 sass.compiler = require('sass');
 
 // functions
@@ -78,7 +80,18 @@ function watch (cb) {
     gulp.watch("./*.html").on('change', browserSync.reload)
     cb ();
 }
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
+
 module.exports.css = css;
 module.exports.watch = watch;
 
 module.exports.default =  gulp.series (server,css, watch);
+
+
+
