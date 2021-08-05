@@ -1,4 +1,4 @@
-.aside {
+#aside {
     position: fixed;
     right: 0px;
     bottom: 0px;
@@ -12,6 +12,8 @@
     transition: all 500ms ease-out 0s;
     box-shadow: rgb(0 0 0 / 30%) -5px 0px 20px 5px;
     display: none;
+    animation: slideMe .8s ease-in;
+    // animation-direction: reverse;
     .navigation-box{
         display: flex;
         align-items: center;
@@ -110,4 +112,24 @@ body.disable-scroll {
     width: 100%;
     z-index: 7;
     transition: all 500ms ease-out 0s;
+}
+
+@keyframes slideMe {
+    0% {
+    width: 0%;
+    }
+
+    100% {
+       width: 40%;
+    }
+}
+
+@keyframes slideMeOut {
+    0% {
+        width: 40%;
+    }
+
+    100% {
+        width: 0%;
+    }
 }

@@ -2,7 +2,7 @@ const btns = document.querySelectorAll(".btn");
 
 const btnsArray = Array.apply(null, btns);
 
-const aside = document.querySelector(".aside");
+const aside = document.querySelector("#aside");
 
 const btnBack = document.querySelector(".back-ico");
 const linkBack = document.querySelector(".back-link");
@@ -47,8 +47,10 @@ linkBack.addEventListener("click", (e) => {
 
 btnsArray[0].addEventListener("click", (e) => {
     aside.style.display = "block";
+    // aside.style.animation = "slideMe .8s ease-in"
     document.body.style.overflow = "hidden";
     pageMask.classList.add("mask");
+
 
     const newLi1 = document.createElement("li");
     technologiesUl.appendChild(newLi1);
