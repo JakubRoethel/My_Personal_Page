@@ -1,0 +1,113 @@
+.aside {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 40%;
+    height: calc(100% - 64px);
+    overflow-y: scroll;
+    z-index: 8;
+    padding: 10px 30px;
+    background: rgb(63, 63, 63);
+    transform: translateX(0px);
+    transition: all 500ms ease-out 0s;
+    box-shadow: rgb(0 0 0 / 30%) -5px 0px 20px 5px;
+    display: none;
+    .navigation-box{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        .back-btn {
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: $color-white;
+            margin-right: 10px;
+        }
+        .back-ico {
+            width: 30px;
+            height: 30px;
+        }
+        .back-link {
+            text-decoration: none;
+            color: $color-white;
+            font-size: 18px;
+        }
+    }
+    .content-box {
+        .aside-title {
+            border-bottom: 1px solid $color-black;
+        }
+        h4 {
+            font-family: "Montserrat";
+            color: $color-dark-green;
+            font-size: 15px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+        h1 {
+            font-family: "Montserrat";
+            color: $title-color;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .img-box {
+            margin-bottom: 20px;
+            .aside-project-miniature {
+                width: 550px;
+                height: 300px;
+            }
+        }
+        p {
+            font-size: 15px;
+            font-family: "Montserrat";
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: $color-white;
+        }
+        .technologies-box {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            li {
+                padding: 10px 10px;
+                background: rgb(112, 112, 112);
+                color: $color-white;
+                font-family: "Montserrat";
+                font-weight: 500;
+            }
+        }
+        .link-box {
+            .links-ico-aside {
+                width: 20px;
+                height: 20px;
+                color: $color-white;
+                margin-bottom: 20px;
+            }
+            .links-ico-aside:hover {
+                color: $title-color;
+            }
+        }
+    }
+}
+
+.aside-open {
+    display: inline;
+}
+
+body.disable-scroll {
+    overflow: hidden;
+}
+
+.mask {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(32, 32, 32);
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+    transition: all 500ms ease-out 0s;
+}

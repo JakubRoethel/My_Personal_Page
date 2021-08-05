@@ -1,83 +1,86 @@
 .my-projects {
-    background: $color-black;
-    .my-projects-container {
-        padding-top: 80px;
-        .my-project-title {
-            color: $title-color;
-            font-family: "Montserrat";
-            font-weight: 700;
-            font-size: 40px;
-            padding: 0px 18px;
-            text-align: end;
-        }
-        .projects-list-box {
-            margin-top: 200px;
+  background: $color-black;
+  .my-projects-container {
+    padding-top: 80px;
+    .my-project-title {
+      color: $title-color;
+      font-family: "Montserrat";
+      font-weight: 700;
+      font-size: 40px;
+      padding: 0px 18px;
+      text-align: end;
+    }
+    .projects-list-box {
+      display: flex;
+      justify-content: center;
+      .projects-list {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // .list-items:first-child {
+        //   margin-top: 200px;
+        // }
+        .list-items {
+          display: flex;
+          margin-top: 200px;
+
+          .item {
+            flex: 1;
+            margin-right: 80px;
+            .project-link-title {
+              font-family: "Montserrat";
+              color: $color-white;
+              text-decoration: none;
+              font-weight: 700;
+              font-size: 30px;
+            }
+            .project-description {
+              font-family: "Montserrat";
+              color: $color-white;
+              font-weight: 400;
+              line-height: 2;
+              font-size: 18px;
+              margin-top: 50px;
+            }
+            .btn {
+              width: 200px;
+              height: 50px;
+              background-color: $color-black;
+              border: 1px solid $title-color;
+              color: $color-white;
+              margin-top: 50px;
+              font-size: 18px;
+              font-family: "Montserrat";
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-decoration: none;
+              scroll-behavior: smooth;
+            }
+            .btn:hover {
+              background-color: $title-color;
+              color: $color-black;
+            }
+          }
+          .project-miniature-link {
+            flex: 1;
             display: flex;
             justify-content: center;
-            .projects-list{
-                width: 80%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                .list-items {
-                    display: flex;
-                    margin-bottom: 200px;
-                    .item {
-                        flex:1;
-                        margin-right: 80px;
-                        .project-link-title {
-                            font-family: "Montserrat";
-                            color: $color-white;
-                            text-decoration: none;
-                            font-weight: 700;
-                            font-size: 30px;
-                        }
-                        .project-description {
-                            font-family: "Montserrat";
-                            color: $color-white;
-                            font-weight: 400;
-                            line-height: 2;
-                            font-size: 18px;
-                            margin-top: 50px;
-                        }
-                        .btn {
-                            width: 200px;
-                            height: 50px;
-                            background-color: $color-black;
-                            border: 1px solid $title-color;
-                            color: $color-white;
-                            margin-top: 50px;
-                            font-size: 18px;
-                            font-family: "Montserrat";
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            text-decoration: none;
-                            scroll-behavior: smooth;
-                          }
-                          .btn:hover {
-                              background-color: $title-color;
-                              color: $color-black;
-                          }
-                    }
-                    .project-miniature-link {
-                        flex: 1;
-                        display: flex;
-                        justify-content: center;
-                        cursor: pointer;
-                        .project-miniature {
-                            width: 550px;
-                            height: 300px;
-                            filter: brightness(50%);
-                        }
-                        .project-miniature:hover {
-                            filter: unset;
-                            border: 1px solid $title-color;
-                        }
-                    }
-                }
+            cursor: pointer;
+            .project-miniature {
+              width: 550px;
+              height: 300px;
+              filter: brightness(50%);
             }
+            .project-miniature:hover {
+              filter: unset;
+              border: 1px solid $title-color;
+            }
+          }
         }
+      }
     }
+  }
 }
