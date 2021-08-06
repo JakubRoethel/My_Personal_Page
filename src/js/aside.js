@@ -24,6 +24,10 @@ const liItem7 = document.querySelector(".item7");
 const linkRepository = document.querySelector(".repository");
 const linkLiveVersion = document.querySelector(".live-version");
 const repositoryTitle = document.querySelector(".link-title");
+const imgList = document.querySelectorAll(".project-miniature");
+const imgArr = Array.apply(null, imgList);
+
+console.log(imgArr[1]);
 
 
 
@@ -45,7 +49,24 @@ linkBack.addEventListener("click", (e) => {
 });
 
 
-btnsArray[0].addEventListener("click", (e) => {
+btnsArray[0].addEventListener("click", display1);
+btnsArray[1].addEventListener("click",display2);
+btnsArray[2].addEventListener("click",display3);
+btnsArray[3].addEventListener("click",display4);
+btnsArray[4].addEventListener("click",display5);
+btnsArray[5].addEventListener("click", display6);
+btnsArray[6].addEventListener("click", display7);
+
+imgArr[0].addEventListener("click", display1);
+imgArr[1].addEventListener("click",display2);
+imgArr[2].addEventListener("click",display3);
+imgArr[3].addEventListener("click",display4);
+imgArr[4].addEventListener("click",display5);
+imgArr[5].addEventListener("click", display6);
+imgArr[6].addEventListener("click", display7);
+
+
+function display1 () {
     aside.style.display = "block";
     // aside.style.animation = "slideMe .8s ease-in"
     document.body.style.overflow = "hidden";
@@ -66,9 +87,9 @@ btnsArray[0].addEventListener("click", (e) => {
     technologiesUl.appendChild(newLi3);
     const textLi3 = document.createTextNode("JAVASCRIPT");
     newLi3.appendChild(textLi3)
-});
+};
 
-btnsArray[1].addEventListener("click", (e) => {
+function display2 () {
     liItem2.appendChild(aside);
     aside.style.display = "block";
     document.body.style.overflow = "hidden";
@@ -105,9 +126,9 @@ btnsArray[1].addEventListener("click", (e) => {
 
     linkRepository.href = "https://github.com/JakubRoethel/Zet_Meble_Calculator_APP";
     linkLiveVersion.href = "https://zetmeble-app.web.app/";
-});
+};
 
-btnsArray[2].addEventListener("click", (e) => {
+function display3 () {
     liItem3.appendChild(aside);
     aside.style.display = "block";
     document.body.style.overflow = "hidden";
@@ -149,9 +170,10 @@ btnsArray[2].addEventListener("click", (e) => {
 
     linkRepository.href = "https://github.com/JakubRoethel/leaving_it_in_the_good_hands";
     linkLiveVersion.href = "";
-});
+};
 
-btnsArray[3].addEventListener("click", (e) => {
+
+function display4 () {
     liItem4.appendChild(aside);
     aside.style.display = "block";
     document.body.style.overflow = "hidden";
@@ -193,9 +215,9 @@ btnsArray[3].addEventListener("click", (e) => {
 
     linkRepository.href = "https://github.com/JakubRoethel/To_Do_App";
     linkLiveVersion.href = "";
-});
+};
 
-btnsArray[4].addEventListener("click", (e) => {
+function display5 () {
     liItem5.appendChild(aside);
     aside.style.display = "block";
     document.body.style.overflow = "hidden";
@@ -228,9 +250,9 @@ btnsArray[4].addEventListener("click", (e) => {
     linkRepository.remove();
     repositoryTitle.remove()
     linkLiveVersion.href = "https://www.belmondo.pl/";
-});
+};
 
-btnsArray[5].addEventListener("click", (e) => {
+function display6 () {
     liItem6.appendChild(aside);
     aside.style.display = "block";
     document.body.style.overflow = "hidden";
@@ -268,9 +290,9 @@ btnsArray[5].addEventListener("click", (e) => {
     linkRepository.remove();
     repositoryTitle.remove()
     linkLiveVersion.href = "https://olgastepinska.pl/";
-});
+};
 
-btnsArray[6].addEventListener("click", (e) => {
+function display7 () {
     liItem7.appendChild(aside);
     aside.style.display = "block";
     document.body.style.overflow = "hidden";
@@ -308,5 +330,5 @@ btnsArray[6].addEventListener("click", (e) => {
 
     linkRepository.href = "https://github.com/JakubRoethel/My_Personal_Page";
     linkLiveVersion.href = "https://jakubroethel.github.io/My_Personal_Page/";
-});
+};
 
