@@ -133,3 +133,17 @@ body.disable-scroll {
         width: 0%;
     }
 }
+
+@media only screen and (max-width: 860px) {
+    #aside {
+        width: 90%;
+        .content-box {
+            .img-box {
+                .aside-project-miniature {
+                    width: 350px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

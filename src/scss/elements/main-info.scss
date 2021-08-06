@@ -67,3 +67,35 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 860px) {
+  .main-info {
+    flex-direction: column;
+    justify-content: center;
+    height: unset;
+    .main-info-box {
+      margin: 70px 0px 10px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: unset;
+
+      .my-info-animation {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    .social-ico-box {
+      flex: unset;
+      flex-direction: unset;
+      justify-content: space-between;
+    }
+    .social-ico {
+      padding: 20px;
+    }
+  }
+
+
+
+}

@@ -59,4 +59,45 @@
 }
 
 
+@media only screen and (max-width: 860px) {
+    .about-me {
+        height: unset;
+        .about-me-container {
+            padding-top: 50px;
+            .about-me-wrapper{
+                flex-direction: column;
+                align-items: center;
+                margin-left: unset;
+                .my-photo {
+                    margin-bottom: 30px;
+                }
+                .about-me-content {
+                    padding-left: unset;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .about-me-title {
+                        text-align: center;
+                    }
+                    .about-me-info {
+                        margin-right: unset;
+                        text-align: center;
+                    }
+                }
+            }
+            .my-skills-box {
+                margin: 50px 0px;
+                .logo-skills-wrapper {
+                    flex-wrap: wrap;
+                    .logo {
+                        height: 40px;
+                        width: 40px;
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
 

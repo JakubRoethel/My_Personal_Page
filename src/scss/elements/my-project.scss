@@ -84,3 +84,43 @@
     }
   }
 }
+
+@media only screen and (max-width: 860px) { 
+    .my-projects {
+      .my-projects-container {
+        .my-project-title {
+          text-align: center;
+        }
+        .projects-list-box {
+          .projects-list {
+            .list-items {
+              flex-direction: column;
+              margin-top: 50px;
+              .item {
+                flex: unset;
+                margin-right: unset;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+                .project-description {
+                  text-align: center;
+                }
+                .project-link-title {
+                  text-align: center;
+                  line-height: 2;
+                }
+              }
+              .project-miniature-link {
+                .project-miniature {
+                  width: 350px;
+                  height: 200px;
+                  margin-top: 50px;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+}
